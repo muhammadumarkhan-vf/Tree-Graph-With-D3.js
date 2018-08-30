@@ -12,29 +12,31 @@ By following these steps you can easily implement d3.js with your current applic
 <meta charset="utf-8">
 <style type="text/css">
   
-	.node {
+ .node {
     cursor: pointer;
   }
 
-  .overlay{
-      background-color:#EEE;
+  .overlay {
+    background-color: #ffffff;
   }
-   
+
   .node circle {
     fill: #fff;
     stroke: steelblue;
-    stroke-width: 1.5px;
+    stroke-width: 1.7px;
   }
-   
+
   .node text {
-    font-size:10px; 
-    font-family:sans-serif;
+    font-size: 12px;
+    font-family: sans-serif;
+    /*transform: skewY(2deg);*/
+    viewport-fill: red;
   }
-   
+
   .link {
     fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
+    stroke: #BBB;
+    stroke-width: 1px;
   }
 
   .templink {
@@ -43,12 +45,12 @@ By following these steps you can easily implement d3.js with your current applic
     stroke-width: 3px;
   }
 
-  .ghostCircle.show{
-      display:block;
+  .ghostCircle.show {
+    display: block;
   }
 
-  .ghostCircle, .activeDrag .ghostCircle{
-       display: none;
+  .ghostCircle, .activeDrag .ghostCircle {
+    display: none;
   }
 
 </style>
